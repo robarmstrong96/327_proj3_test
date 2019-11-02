@@ -186,7 +186,7 @@ void testStringParser(const std::string &startTag,const std::string &endTag){
 	try{
 		EXPECT_EQ (SUCCESS, sp.getDataBetweenTags(pChar, mv),"20",ZERO_POINTS);	//already tested
 	} catch (...) {cout<<"Threw exception 20 "<<endl;}
-
+	std::cout << mv.size() << endl;
 	if (mv.size()>0)
 		EXPECT_EQ (2, mv.size(),"21",TEN_POINTS);
 }
